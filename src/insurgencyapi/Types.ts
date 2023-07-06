@@ -184,7 +184,7 @@ export type AttachmentTypeNames =
     | "miscellaneous"
     | "chamber"
 
-    export type Class = 
+    export type PlayerClass = 
     | "rifleman"
     | "breacher"
     | "advisor"
