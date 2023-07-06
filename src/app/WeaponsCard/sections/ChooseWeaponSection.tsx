@@ -1,7 +1,6 @@
-import { ChangeEvent, useEffect, useState, Dispatch, SetStateAction, MouseEvent } from "react"
+import { ChangeEvent, useEffect, useState, Dispatch, SetStateAction, useCallback, useMemo } from "react"
 import classesData from "../../../insurgencyapi/versus/classes.json"
-
-import { Class, Faction, Gamemode, Weapon } from "../../../insurgencyapi/Types"
+import { Faction, Gamemode, PlayerClass, Weapon } from "../../../insurgencyapi/Types"
 
 interface IChooseWeaponSection {
     setWeapon: Dispatch<SetStateAction<Weapon>>
@@ -11,44 +10,51 @@ interface IChooseWeaponSection {
 interface IOptions {
     gamemode: Gamemode
     faction: Faction
-    class: Class
+    playerClass: PlayerClass
 }
 
 const ChooseWeaponSection = ({ setWeapon, weapon }: IChooseWeaponSection) => {
     const [options, setOptions] = useState<IOptions>({
         gamemode: "versus",
         faction: "insurgents",
-        class: "rifleman"
+        playerClass: "rifleman"
     })
 
-    const handleWeaponChange = (e: ChangeEvent<HTMLSelectElement>) => {
-        setWeapon(e.target.value as Weapon)
-    }
+    const { faction, playerClass } = options
+    const PLAYER_CLASS = classesData[faction][playerClass]
 
-    const handleOptionChange = (e: ChangeEvent<HTMLSelectElement>) => {
-        setOptions({
+    const WEAPONS = useMemo(() => {
+        const primaryWeapons = PLAYER_CLASS.primary_weapons
+        const secondaryWeapons = classesData[faction].secondary_weapons
+        return [...primaryWeapons, ...secondaryWeapons] as Weapon[]
+    }, [PLAYER_CLASS.primary_weapons, faction]);
+
+    const handleWeaponChange = useCallback((e: ChangeEvent<HTMLSelectElement>) => {
+        setWeapon(e.target.value as Weapon)
+    }, [setWeapon])
+
+    const handleOptionChange = useCallback((e: ChangeEvent<HTMLSelectElement>) => {
+        setOptions(options => ({
             ...options,
             [e.target.id]: e.target.value
-        })
-    }
+        }))
+    }, [])
 
-    const playerClass = classesData[options.faction][options.class]
-    const weapons = playerClass.primary_weapons.concat(classesData[options.faction].secondary_weapons) as Weapon[]
-    const weaponsList = weapons.map(weapon =>
-        <option className="text-center" key={weapon}>
-            {weapon}
-        </option>
-    )
+    const weaponsList = useMemo(() => {
+        return WEAPONS.map((weapon) => (
+            <option className="text-center" key={weapon}>
+                {weapon}
+            </option>
+        ));
+    }, [WEAPONS])
 
-    const handleRandomWeapon = () => {
-        const playerClass = classesData[options.faction][options.class]
-        const weapons = playerClass.primary_weapons.concat(classesData[options.faction].secondary_weapons) as Weapon[]
-        setWeapon(weapons[Math.floor(Math.random() * weapons.length)])
-    }
+    const handleRandomWeapon = useCallback(() => {
+        setWeapon(WEAPONS[Math.floor(Math.random() * WEAPONS.length)])
+    }, [WEAPONS, setWeapon])
 
     useEffect(() => {
-        setWeapon(playerClass.primary_weapons[0] as Weapon)
-    }, [options])
+        setWeapon(WEAPONS[0]);
+    }, [WEAPONS, setWeapon]);
 
     return (
         <div className="large-6 choose-weapon-section">
