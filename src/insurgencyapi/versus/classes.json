@@ -1,0 +1,286 @@
+{
+    "insurgents": {
+        "secondary_weapons": [
+            "Makarov",
+            "Welrod",
+            "Browning HP",
+            "M1911",
+            "M9",
+            "Desert Eagle"
+        ],
+        "rifleman": {
+            "primary_weapons": [
+                "M16A2",
+                "SG 552",
+                "AKM",
+                "QBZ-97",
+                "AK-74",
+                "QBZ-03",
+                "FAL",
+                "FAMAS F1"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "F1 Frag",
+                "Molotov"
+            ]
+        },
+        "breacher": {
+            "primary_weapons": [
+                "Sterling",
+                "KS-23",
+                "TOZ-194",
+                "Uzi",
+                "MP5A2",
+                "AS VAL"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "M84 Flash",
+                "TM-62 Mine",
+                "F1 Frag",
+                "Molotov",
+                "IED"
+            ]
+        },
+        "advisor": {
+            "primary_weapons": [
+                "SKS",
+                "AKS-74U",
+                "Alpha AK",
+                "ACE 52",
+                "P90"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "M84 Flash",
+                "F1 Frag",
+                "Molotov"
+            ]
+        },
+        "demolitions": {
+            "primary_weapons": [
+                "M16A2",
+                "SG 552",
+                "AKM",
+                "QBZ-97",
+                "AK-74",
+                "QBZ-03",
+                "FAL",
+                "FAMAS F1"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "TM-62 Mine",
+                "F1 Frag",
+                "Molotov",
+                "IED",
+                "Panzerfaust 3",
+                "RPG-7"
+            ]
+        },
+        "marksman": {
+            "primary_weapons": [
+                "Mosin-Nagant",
+                "M1 Garand",
+                "M99",
+                "SVD"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "F1 Frag",
+                "Molotov"
+            ]
+        },
+        "gunner": {
+            "primary_weapons": [
+                "Galil",
+                "PKM",
+                "RPK",
+                "MG3"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "TM-62 Mine",
+                "F1 Frag",
+                "Molotov"
+            ]
+        },
+        "observer": {
+            "primary_weapons": [
+                "M16A2",
+                "SG 552",
+                "AKM",
+                "QBZ-97",
+                "AK-74",
+                "QBZ-03",
+                "FAL",
+                "FAMAS F1"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "F1 Frag",
+                "Molotov"
+        ]
+        },
+        "commander": {
+            "primary_weapons": [
+                "M16A2",
+                "SG 552",
+                "AKM",
+                "QBZ-97",
+                "AK-74",
+                "QBZ-03",
+                "FAL",
+                "FAMAS F1"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "F1 Frag",
+                "Molotov"
+            ]
+        }
+    },
+    "security": {
+        "secondary_weapons": [
+            "Tariq",
+            "L106A1",
+            "M45",
+            "PF940",
+            "MR 73"
+        ],
+        "rifleman": {
+            "primary_weapons": [
+                "M16A4",
+                "AUG A3",
+                "G36K",
+                "G3A3",
+                "QTS-11",
+                "M4A1",
+                "VHS-2",
+                "MDR"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "AN-M14 Incendiary",
+                "M67 Frag"
+            ]
+        },
+        "breacher": {
+            "primary_weapons": [
+                "Grease Gun",
+                "M870",
+                "MP5A5",
+                "KSG",
+                "MP7",
+                "Honey Badger"
+            ],
+            "explosives": [
+                "M19 Mine",
+                "M83 Smoke",
+                "M84 Flash",
+                "AN-M14 Incendiary",
+                "M67 Frag",
+                "C-4"
+            ]
+        },
+        "advisor": {
+            "primary_weapons": [
+                "Mk 17 MOD 0",
+                "L85A2",
+                "Mk 18 CQBR",
+                "Tavor 7",
+                "Vector"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "M84 Flash",
+                "AN-M14 Incendiary",
+                "M67 Frag"
+            ]
+        },
+        "demolitions": {
+            "primary_weapons": [
+                "M16A4",
+                "AUG A3",
+                "G36K",
+                "G3A3",
+                "QTS-11",
+                "M4A1",
+                "VHS-2",
+                "MDR"
+            ],
+            "explosives": [
+                "M19 Mine",
+                "M83 Smoke",
+                "M84 Flash",
+                "AN-M14 Incendiary",
+                "M67 Frag",
+                "AT4",
+                "C-4",
+                "M3 MAAWS"
+            ]
+        },
+        "marksman": {
+            "primary_weapons": [
+                "M24",
+                "M82A1 CQ",
+                "M110 SASS",
+                "Mk 14 EBR"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "AN-M14 Incendiary",
+                "M67 Frag"
+            ]
+        },
+        "gunner": {
+            "primary_weapons": [
+                "Galil SAR",
+                "M249",
+                "M60",
+                "M240B"
+            ],
+            "explosives": [
+                "M19 Mine",
+                "M83 Smoke",
+                "AN-M14 Incendiary",
+                "M67 Frag"
+            ]
+        },
+        "observer": {
+            "primary_weapons": [
+                "M16A4",
+                "AUG A3",
+                "G36K",
+                "G3A3",
+                "QTS-11",
+                "M4A1",
+                "VHS-2",
+                "MDR"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "AN-M14 Incendiary",
+                "M67 Frag"
+            ]
+        },
+        "commander": {
+            "primary_weapons": [
+                "M16A4",
+                "AUG A3",
+                "G36K",
+                "G3A3",
+                "QTS-11",
+                "M4A1",
+                "VHS-2",
+                "MDR"
+            ],
+            "explosives": [
+                "M83 Smoke",
+                "AN-M14 Incendiary",
+                "M67 Frag"
+            ]
+        }
+    }
+}

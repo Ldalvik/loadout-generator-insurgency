@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:500,700italic,400,700");
+
+* {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.bar-shadow {
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .2);
+}
+
+.topbar-title {
+  color: #000000 !important;
+  font-size: 23px;
+}
+
+.divider {
+  border: 1px solid #b0b0b037;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.stats-text {
+  margin: 0;
+}
+
+.menu-button {
+  color: black !important;
+  font-size: 16px;
+}
+
+.page-card {
+  margin-top: 20px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #0000002f;
+  box-shadow: 1px 3.5px 5px -4px rgba(0, 0, 0, .3);
+}
+
+.filters-text {
+  font-weight: 600;
+}
+
+.attachments-text {
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.options-dropdown {
+  height: 35px;
+  border-radius: 7px;
+}
+
+.btn {
+  text-align: center;
+  line-height: 0%;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.select-weapon-dropdown {
+  border-radius: 7px 0 0 7px;
+  width: 100%;
+}
+
+.random-weapon-btn {
+  border-radius: 0 7px 7px 0;
+  width: 100%;
+}
+
+.choose-weapon-section {
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+.attachments-dropdown {}
+
+.attachments-section {
+  padding: 10px;
+}
