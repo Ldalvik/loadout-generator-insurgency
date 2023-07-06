@@ -15,23 +15,22 @@ export interface IWeaponStats {
 }
 
 export interface IWeaponAttachments {
-    optic?: Optic[] | Optic
-    barrel?: Barrel[] | Barrel
-    underbarrel?: Underbarrel[] | Underbarrel
-    magazine?: Magazine[] | Magazine
-    siderail?: Siderail[] | Siderail
-    ammo?: Ammo[] | Ammo
-    stock?: Stock[] | Stock
-    miscellaneous?: Miscellaneous[] | Miscellaneous
-    chamber?: Chamber[] | Chamber
+    optic?: Optic
+    barrel?: Barrel
+    underbarrel?: Underbarrel
+    magazine?: Magazine
+    siderail?: Siderail
+    ammo?: Ammo
+    stock?: Stock
+    miscellaneous?: Miscellaneous
+    chamber?: Chamber
 }
 
 
 
 // TODO: Make seperate SecondaryWeapon and PrimaryWeapon types
-export interface IPlayerClass {
+export interface ILoadout {
     primary_weapons: Weapon
-    secondary_weapons: Weapon
     explosives: Explosive
     //explosives2: Explosive
     //explosives3: Explosive
@@ -40,18 +39,19 @@ export interface IPlayerClass {
     //accessory: Accessory
 }
 
-export interface IClass {
-    rifleman: IPlayerClass
-    breacher: IPlayerClass
-    advisor: IPlayerClass
-    demolitions: IPlayerClass
-    marksman: IPlayerClass
-    gunner: IPlayerClass
-    observer?: IPlayerClass
-    commander?: IPlayerClass
+export interface IPlayerClass {
+    secondary_weapons: Weapon
+    rifleman: ILoadout
+    breacher: ILoadout
+    advisor: ILoadout
+    demolitions: ILoadout
+    marksman: ILoadout
+    gunner: ILoadout
+    observer?: ILoadout
+    commander?: ILoadout
 }
 
 export interface IFaction {
-    insurgents: IClass
-    security:IClass
+    insurgents: IPlayerClass
+    security: IPlayerClass
 }
