@@ -66,7 +66,9 @@ const ChooseWeaponSection = ({ setWeapon, weapon }: IChooseWeaponSection) => {
                     </select>
                 </div>
                 <div className="small-3">
-                    <button onClick={handleRandomWeapon} className="button btn random-weapon-btn">Random</button>
+                    <button onClick={handleRandomWeapon} className="button btn random-weapon-btn">
+                            <i className="fa fa-random"></i>
+                        </button>
                 </div>
             </div>
 

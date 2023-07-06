@@ -46,7 +46,7 @@ const AttachmentsPage = ({ weapon }: IAttachmentsPage) => {
 
     const attachmentSelect = (attachment: AttachmentTypeNames) => {
         return ATTACHMENTS[attachment].length > 0 && (
-            <div className="small-6 attachment-item-section">
+            <div className="small-12 medium-6 attachment-item-section">
                 <label className="attachments-text">
                     {`${attachment.charAt(0).toUpperCase()}${attachment.slice(1)}`}
                 </label>
@@ -69,11 +69,11 @@ const AttachmentsPage = ({ weapon }: IAttachmentsPage) => {
         <div className="card page-card">
             <div className="card-section">
                 <div className="text-center">
-                    {Object.values(ATTACHMENTS).every((array) => array.length === 0) ? (
+                    {Object.values(ATTACHMENTS).every(array => array.length === 0) ? (
                         <>
-                            <h4>The attachment for this weapon hasn't been added! (yet)</h4>
-                            <a href="https://github.com/Ldalvik/insurgency-loadout-generator">
-                                How about you try adding them yourself?
+                            <h4>The attachments for this weapon haven't been added! (yet)</h4>
+                            <a href="https://github.com/Ldalvik/loadout-generator">
+                                How about adding them yourself?
                             </a>
                         </>
                     ) : (
