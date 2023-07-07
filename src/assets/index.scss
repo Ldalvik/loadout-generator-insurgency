@@ -63,6 +63,16 @@ h6 {
 .options-dropdown {
   height: 35px;
   border-radius: 7px;
+  box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, .3);
+}
+
+.options-dropdown:hover {
+  box-shadow: 1px 3px 4px -3px rgba(0, 0, 0, .3);
+  transform: scale(1.01);
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .btn {
@@ -70,6 +80,25 @@ h6 {
   line-height: 0%;
   height: 35px;
   border-radius: 7px;
+  box-shadow: 3px 3px 3px -3px rgba(0, 0, 0, .3);
+}
+
+.btn:hover {
+  box-shadow: 1px 3px 4px -3px rgba(0, 0, 0, .5);
+  transform: scale(1.02);
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.btn:active {
+  box-shadow: 0;
+  transform: scaleX(0.99);
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
 
 .select-weapon-dropdown {
@@ -81,20 +110,22 @@ h6 {
   border-radius: 0 7px 7px 0;
   width: 100%;
 }
- .random-icon {
+
+.random-icon {
   font-size: 13px;
   margin: 0;
   padding: 0;
   line-height: 0;
  }
 
- 
 .choose-weapon-section {
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
-.attachments-dropdown {}
+.attachments-dropdown {
+
+}
 
 .attachment-item-section {
   padding: 10px;
