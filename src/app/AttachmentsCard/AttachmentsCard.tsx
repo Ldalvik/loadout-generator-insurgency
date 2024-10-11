@@ -72,7 +72,7 @@ const AttachmentsPage = ({ weapon }: IAttachmentsPage) => {
                     {Object.values(ATTACHMENTS).every(array => array.length === 0) ? (
                         <>
                             <h4>The attachments for this weapon haven't been added! (yet)</h4>
-                            <a href="https://github.com/Ldalvik/loadout-generator">
+                            <a href="https://github.com/Ldalvik/loadout-generator-insurgency">
                                 How about adding them yourself?
                             </a>
                         </>
